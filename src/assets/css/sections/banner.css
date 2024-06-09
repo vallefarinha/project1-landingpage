@@ -1,0 +1,9 @@
+#slogan {
+    background-image: url(./src/assets/img/slogan-fondo.png);
+}
+
+#slogan > img {
+    width: 100%;
+    max-height: calc(100vh - 57px);
+    object-fit: contain;
+}

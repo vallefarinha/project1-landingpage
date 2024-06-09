@@ -1,0 +1,66 @@
+@import url(./sections/banner.css);
+@import url(./sections/health.css);
+@import url(./sections/next.css);
+@import url(./sections/numbers.css);
+@import url(./sections/team.css);
+@import url(./sections/tools.css);
+@import url(./footer.css);
+@import url(./header.css);
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; 
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 57px; }
+
+body {
+    width: 90%;
+    margin: auto;
+    border-left: 2px solid  #DADBE9;
+    border-right: 2px solid  #DADBE9;
+}
+
+
+h1 {    
+    color: #1C203C;
+    font-family: Monofett;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h2 {
+    text-align: center;
+    padding: 3rem;    
+    color: #1C203C;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+main > * {
+    min-height: calc(100vh - 57px);
+}
+h5 {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+h6 {
+    color:#1C203C;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+ 
+
+
+ 
+
+

@@ -1,0 +1,37 @@
+footer {
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #DADBE9;
+    padding: 0 30px;
+    align-items: center;
+}
+
+
+.logo_copyright {
+    text-align: center;
+}
+.logo_copyright > img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo{
+    padding-top: 10px;
+}
+
+.copyright{
+    font-size: 10px;
+    padding-bottom: 10px;
+    color: #1C203C;
+}
+
+#redes_contacto {
+    display: flex;
+    gap: 10px;
+    margin-right: 0;
+}
+.redes_contacto_icon img{
+    width: 30px;
+    height: 30px;
+}

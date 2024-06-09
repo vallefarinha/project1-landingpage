@@ -1,0 +1,24 @@
+#herramientas_lenguajes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    column-gap: 20px;
+}
+
+.herramientas,.lenguajes {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 700px;
+}
+
+.box_lenguajes {
+    margin-top: 50px;
+}
+
+#herramientas_lenguajes figure img{
+    width: 100px;
+    height: 100px;
+}
