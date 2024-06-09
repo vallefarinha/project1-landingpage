@@ -4,7 +4,7 @@
     align-items: baseline;
 }
 
-#proximos_proyectos {
+#next {
     height: 200px;
     text-align: center;
     border: 2px solid rgba(130, 82, 158, 0.4);
@@ -17,7 +17,7 @@
     column-gap: 10px;
 }
 
-#proximos_proyectos > h3 {
+#next > h3 {
     width: 90%;
     text-align: center;
     padding: 5px;

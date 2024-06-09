@@ -6,6 +6,7 @@
 @import url(./sections/tools.css);
 @import url(./footer.css);
 @import url(./header.css);
+
 * {
     margin: 0;
     font-family: 'Roboto', sans-serif; 
@@ -13,13 +14,12 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 57px; }
+    scroll-padding-top: 57px; 
+}
 
 body {
     width: 90%;
     margin: auto;
-    border-left: 2px solid  #DADBE9;
-    border-right: 2px solid  #DADBE9;
 }
 
 

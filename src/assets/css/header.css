@@ -1,8 +1,7 @@
 header {
     position: sticky;
     top: 0;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); /*filter*/
-    flex-wrap: wrap;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     background-color: #DADBE9;
     display: flex;
     justify-content: space-between;
@@ -10,57 +9,96 @@ header {
 }
 
 nav {
+    padding: 1rem;
+    flex-direction: column;
     display: flex;
     align-items: center;
-    justify-content: right;
-    padding: 0 30px 0 0;  
+    justify-content: center;
+    width: 100%;
 }
 
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
 
-#nav_bar {
+.logo{
+  
+    margin-bottom: 1rem;
+}
+
+.logo a {
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#navbar {
     display: flex;
     list-style: none;
-    column-gap: 32px;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
-#nav_bar a {
+#navbar li{
+    align-items: center;
+    justify-content: center;
+
+}
+#navbar a {
     text-decoration: none;
     color: #1C203C;
-    font-size: 20px;
-    font-style: normal;
+    font-size: 0.8rem;
     font-weight: 800;
-    line-height: normal; 
 }
 
-/*opcional*/
-#nav_bar a:hover {
+#navbar a:hover {
     color: purple;
 }
 
-
 /*-------------RESPONSIVE- NAVBAR-------------*/
-@media only screen and (max-width:870px) {
 
-    ul li{
-        font-size:15px;
-        padding-top: 20px;
-    }
-}
+@media only screen and (min-width:820px) {
 
-@media only screen and (max-width:570px) {
     nav{
-        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
     }
 
-    ul li{
-        
-        width: 100%;
-        text-align: left;
-        font-size:15px;
-        padding: 2px;
+    .logo h1 {
+        font-size: 2rem;
     }
 
-    li a{
-        display: block;
+    .logo img {
+        width: 80px;
+    }
+
+    #navbar a{
+        font-size: 1.2rem;
     }
 }
+
+@media only screen and (min-width:920px) {
+
+    #navbar a{
+        font-size: 1.5rem;
+    }
+}
+
+
+    

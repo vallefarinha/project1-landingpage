@@ -1,3 +1,14 @@
+#numbers {
+    max-width: 90%;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    column-gap: 5px;
+    row-gap: 20px;
+    padding: 5px;
+}
+
 #progreso_banner {
     max-height: 90%;
     display: flex;
@@ -19,22 +30,11 @@
     font-size: medium;
 }
 
-#progreso {
-    max-width: 90%;
-    padding-top: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    column-gap: 5px;
-    row-gap: 20px;
-    padding: 5px;
-}
-
-#progreso > h2 {
+#numbers > h2 {
     padding-top: 5px;
 }
 
-#progreso > h3 {
+#numbers > h3 {
     padding-top: 5px;
     margin-bottom: 5px;
 }
