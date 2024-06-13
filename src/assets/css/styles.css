@@ -36,15 +36,12 @@ h2 {
     text-align: center;
     padding: 3rem;    
     color: #1C203C;
-    font-size: 45px;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
 }
 
-main > * {
-    min-height: calc(100vh - 57px);
-}
 h5 {
     height: 25px;
     display: flex;
@@ -59,8 +56,12 @@ h6 {
     margin-bottom: 10px;
 }
  
-
-
  
 
 
+@media only screen and (max-width: 526px) {
+    h2 {
+     padding: 1rem;
+     font-size: 1.5rem;
+    }
+}

@@ -1,104 +1,105 @@
 header {
-    position: sticky;
-    top: 0;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    background-color: #DADBE9;
-    display: flex;
-    justify-content: space-between;
-    z-index: 2;
+  position: sticky;
+  top: 0;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: #dadbe9;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
 }
 
 nav {
-    padding: 1rem;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+  padding: 1rem;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 #home {
-    display: flex;
-    align-items: center;
-    justify-content: left;
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
 
-.logo{
-  
-    margin-bottom: 1rem;
+.logo {
+  margin-bottom: 1rem;
 }
 
 .logo a {
-    text-decoration: none;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo img {
-    width: 50px;
+  width: 50px;
 }
 
 .logo h1 {
-    font-size: 2rem;
-    text-align: center;
+  font-size: 2rem;
+  text-align: center;
 }
 
 #navbar {
-    display: flex;
-    list-style: none;
-    gap: 1rem;
-    flex-wrap: wrap;
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-#navbar li{
-    align-items: center;
-    justify-content: center;
-
+#navbar li {
+  align-items: center;
+  justify-content: center;
 }
 #navbar a {
-    text-decoration: none;
-    color: #1C203C;
-    font-size: 0.8rem;
-    font-weight: 800;
+  text-decoration: none;
+  color: #1c203c;
+  font-size: 0.8rem;
+  font-weight: 800;
 }
 
 #navbar a:hover {
-    color: purple;
+  color: purple;
 }
 
 /*-------------RESPONSIVE- NAVBAR-------------*/
 
-@media only screen and (min-width:820px) {
+@media only screen and (min-width: 894px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+  }
 
-    nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 1rem;
-    }
+  .logo h1 {
+    font-size: 2rem;
+  }
 
-    .logo h1 {
-        font-size: 2rem;
-    }
+  .logo img {
+    width: 80px;
+  }
 
-    .logo img {
-        width: 80px;
-    }
-
-    #navbar a{
-        font-size: 1.2rem;
-    }
+  #navbar a {
+    font-size: 1.2rem;
+  }
 }
 
-@media only screen and (min-width:920px) {
-
-    #navbar a{
-        font-size: 1.5rem;
-    }
+@media only screen and (min-width: 1029px) {
+  #navbar a {
+    font-size: 1.5rem;
+  }
 }
 
-
-    
+@media only screen and (max-width: 526px) {
+    #navbar {
+      width: 80%;
+      justify-content: center;
+      padding: 0;
+    }
+  }
