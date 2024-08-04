@@ -56,4 +56,7 @@ Push to the branch:
 git push origin feature-branch
 Open a Pull Request.
 
+##Visit the website
+https://vallefarinha.github.io/project1-landingpage/
+
 ## Feel free to adjust the content to better suit your project's specifics.
