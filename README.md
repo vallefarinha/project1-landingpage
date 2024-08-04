@@ -16,24 +16,6 @@ Welcome to the Team Three website repository! This project showcases the team me
 
 This website introduces the Team Three members, tools, project progress, and team health.
 
-## Project Structure
-
-TeamThree/
-│
-├── src/
-│ ├── assets/
-│ │ ├── css/
-│ │ │ └── styles.css
-│ │ ├── icons/
-│ │ │ └── (icon files)
-│ │ ├── img/
-│ │ │ └── (image files)
-│ ├── animations_progress.js
-│ └── animations_team.js
-│
-├── index.html
-└── README.md
-
 ## Technologies Used
 
 - **HTML5**
