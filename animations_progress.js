@@ -3,15 +3,15 @@ function Progreso(id) {
 
     const span = button.querySelector('span');
 
-    const hasta = parseInt(button.dataset.hasta);
-    const sufijo = button.dataset.sufijo;
+    const until = parseInt(button.dataset.until);
+    const sufix = button.dataset.sufix;
 
     let i = 0;
 
     const interval = setInterval(() => {
-        span.innerHTML = ++i + sufijo;
+        span.innerHTML = ++i + sufix;
 
-        if (i === hasta) {
+        if (i === until) {
             clearInterval(interval);
         }
     }, 10)

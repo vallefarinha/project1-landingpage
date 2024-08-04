@@ -5,7 +5,7 @@ header {
   background-color: #dadbe9;
   display: flex;
   justify-content: space-between;
-  z-index: 2;
+  z-index: 20;
 }
 
 nav {
@@ -24,7 +24,7 @@ nav {
 }
 
 .logo {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .logo a {
@@ -74,25 +74,29 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .logo h1 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .logo img {
-    width: 80px;
+    width: 35px;
   }
 
   #navbar a {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
 }
 
 @media only screen and (min-width: 1029px) {
   #navbar a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .logo img {
+    width: 50px;
   }
 }
 

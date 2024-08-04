@@ -1,9 +1,9 @@
-#banner {
+#main_banner {
     background-image: url(./src/assets/img/slogan-fondo.png);
     object-fit: cover;
 }
 
-#banner img {
+#main_banner img {
     width: 100%;
-    max-height: calc(100vh - 180px);
+    /* max-height: calc(100vh - 180px); */
 }
