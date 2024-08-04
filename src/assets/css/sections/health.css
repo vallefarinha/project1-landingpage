@@ -1,47 +1,44 @@
-#salud {
-    width: 100%;
-    height: 650px;
+#health {
     background-color: rgba(234, 235, 245, 1);
-    padding: 0;
+    margin-top: 1rem;
+    text-align: center;
+    margin: 0 auto;
 }
 
-.salud_content {
-    width: 60%;
-    height: 500px;
-    left: 20%;
-    margin:auto;
+.health_container {
+    margin: 1rem;
+    padding: 0.5rem;
 }
 
-#salud h4 {
+#health h4 {
     padding-left: 5px;
     padding-bottom: 10px;
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 0.2em rgba(28, 32, 60, 1), 0 0 0.2em rgba(28, 32, 60, 1),
-		0 0 0.2em rgba(28, 32, 60, 1);
+    color: #1C203C;
 }
 
-.bar_medidora {
+.health_content {
     display: flex;
-    padding-bottom: 30px;
+    flex-direction: column;
+    margin-bottom: 1rem;
 }
 
-#triste {
+.health_content h4 {
+    text-align: start;
+}
+
+.bar {
+    display: flex;
+    gap: 1rem;
+}
+
+.health_content img {
     margin-right: 5px;
     margin-top: 10px;
     width: 40px;
     height: 40px;
-    
 }
 
-#contento {
-    margin-left: 5px;
-    margin-top: 6px;
-    width: 48px;
-    height: 48px;
-    
-}
-
-.bar_container {
+.progress_bar {
     width: 100%;
     background-color: rgb(216, 214, 214);
     border-radius: 1rem;
@@ -54,77 +51,89 @@
     color: white;
     font-weight: 900;
     border-radius: 4rem;
-    box-sizing: border-box; /*para que no se desborde*/
+    box-sizing: border-box;
 }
 
-#estres {
-    background-color:#af4999 ;
+#stress {
+    background-color: #af4999;
     width: 20%;
 }
 
-#salud:hover #estres {
-    animation: estres 2s forwards;
+.health_content:hover #stress {
+    animation: stress 2s forwards;
 }
 
-#cansancio { 
-    background-color:rgb(252, 175, 60) ;
+#tired {
+    background-color: rgb(252, 175, 60);
     width: 70%;
 }
 
-#salud:hover #cansancio {
-    animation: cansancio 2s forwards;
+.health_content:hover #tired {
+    animation: tired 2s forwards;
 }
 
-#optimismo {
-    background-color:#00658d ;
+#optimism {
+    background-color: #00658d;
     width: 95%;
 }
-#salud:hover #optimismo {
-    animation: optimismo 2s forwards;
+
+.health_content:hover #optimism {
+    animation: optimism 2s forwards;
 }
 
-#confianza {
-    background-color:#489946 ;
+#trust {
+    background-color: #489946;
     width: 90%;
 }
 
-#salud:hover #confianza {
-    animation: confianza 2s forwards;
+.health_content:hover #trust {
+    animation: trust 2s forwards;
 }
 
 
-@keyframes estres{
+@keyframes stress {
     0% {
-        width:0;
+        width: 0;
     }
-    100%{
+
+    100% {
         width: 20%;
     }
 }
 
-@keyframes cansancio{
+@keyframes tired {
     0% {
-        width:0;
+        width: 0;
     }
-    100%{
+
+    100% {
         width: 70%;
     }
 }
 
-@keyframes optimismo{
+@keyframes optimism {
     0% {
-        width:0;
+        width: 0;
     }
-    100%{
+
+    100% {
         width: 95%;
     }
 }
 
-@keyframes confianza{
+@keyframes trust {
     0% {
-        width:0;
+        width: 0;
     }
-    100%{
+
+    100% {
         width: 90%;
     }
+}
+
+@media only screen and (max-width: 720px) {
+    .health_content img {
+        width: 20px;
+        height: 20px;
+    }  
 }

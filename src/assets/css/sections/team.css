@@ -1,34 +1,26 @@
-#equipo {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    padding: 0 30px 0 0;
-}
-
-
-#equipo > .logo {
-    width: 50px;
-    margin: 0 15px;
-}
-
-#integrantes {
-    height: 550px;
+#team {
     background-color: #EAEBF5;
-    padding-top: 50px;
+    max-height: calc(100vh - 220px);   
+}
+
+#team h2{
+    text-align: center;
+    padding: 1rem;
+
 }
 
 .arrow_left,
 .arrow_right {
-    position: absolute;
-    left: 0;
+   left: 0;
     right: auto;
-    font-size: 50px;
+    font-size: 3rem;
     line-height: 150px;
     width: 40px;
     color: #1C203C;
     cursor: pointer;
     border: none;
     background-color: #EAEBF5;
+    z-index: 10;
 }
 
 .arrow_left:hover,
@@ -43,13 +35,11 @@
 }
 
 .container {
-    position: relative;
-    padding: 60px;
-    max-width: 900px;
     left: 0;
     margin: auto;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .gallery_wrapper {
@@ -59,7 +49,7 @@
 .gallery {
     display: flex;
     flex-flow: row nowrap;
-    gap: 60px;
+    gap: 15rem;
     align-items: center;
 }
 
@@ -81,6 +71,7 @@
 
 .item {
     border-radius: 10px;
+    text-align: center;
     position: relative;
     width: 300px;
     height: 350px;
@@ -105,17 +96,17 @@
   border-radius: 10px;
 }
 
-.hover_content {
+.hover_content {   
     position: absolute;
     text-align: center;
     opacity: 0;
     border-radius: 10px;
     z-index: 1;
     overflow: hidden;
-    top: 0; /* Coloca a div no topo do elemento pai */
-    left: 0; /* Coloca a div no canto esquerdo do elemento pai */
-    right: 0; /* Coloca a div no canto direito do elemento pai */
-    bottom: 0; /* Coloca a div no fundo do elemento pai */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
     transition: all 100ms ease-in-out 200ms;
 }
 
@@ -197,3 +188,31 @@
 .victoria {
     background: linear-gradient(180deg, #FF6C6C 0%, #F5F5F5 100%);
 }
+
+@media only screen and (max-width: 526px) {
+    .team_image{
+        width: 100px;
+        height: 100px;     
+        margin-top: 1rem;
+    }
+
+    .container{
+        max-height: 220px;
+    } 
+
+    .gallery_wrapper{
+        height: 150px;
+        padding: 1rem;
+        overflow: hidden;
+    }
+
+    .gallery{
+        gap: 3rem;
+    }
+  }
+
+  @media only screen and (min-width: 527px) {
+    .gallery{
+        gap: 8rem;
+    }
+  }
